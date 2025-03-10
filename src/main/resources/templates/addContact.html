@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contact</title>
 </head>
-<body>
-$END$
+<body style="font-family: Arial, sans-serif; background-color: #FFD700; color: #8B0000; text-align: center; padding: 20px;">
+
+    <h1 style="border-bottom: 3px solid #8B0000; display: inline-block; padding-bottom: 5px;">Add New Contact</h1>
+
+    <form action="/add" method="post" style="max-width: 400px; margin: auto; background: #FFF3CD; padding: 20px; border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);">
+        <div style="margin-bottom: 15px;">
+            <label for="name" style="font-weight: bold;">Name:</label><br>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; border: 2px solid #8B0000; border-radius: 5px;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label for="email" style="font-weight: bold;">Email:</label><br>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border: 2px solid #8B0000; border-radius: 5px;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label for="phone" style="font-weight: bold;">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" style="width: 100%; padding: 8px; border: 2px solid #8B0000; border-radius: 5px;">
+        </div>
+
+        <button type="submit" style="background-color: #8B0000; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;">
+            Save Contact
+        </button>
+    </form>
+
+    <div style="margin-top: 20px;">
+        <a href="/contacts" style="text-decoration: none; font-weight: bold; color: #8B0000; font-size: 18px;">
+            ← Back to Contacts
+        </a>
+    </div>
+
 </body>
 </html>
